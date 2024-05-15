@@ -11,7 +11,7 @@ app.use(cors());
 // Define a route to call the ngrok URL
 app.get('/ngrok-reference-user-directory', async (req, res) => {
   try {
-    const response = await axios.get('https://843c-119-155-18-236.ngrok-free.app/list-full-user-directory',  {
+    const response = await axios.get('https://0d72-119-155-18-236.ngrok-free.app/list-full-user-directory',  {
         headers: {
             uid: req.headers.uid
         }
