@@ -24,9 +24,9 @@ app.get('/ngrok-reference-user-directory', async (req, res) => {
   }
 });
 
-app.post('https://963d-119-155-18-236.ngrok-free.app/ngrok-reference-upload-file', async (req, res) => {
+app.post('/ngrok-reference-upload-file', async (req, res) => {
   try {
-    const response = await axios.post('/upload', req.body, {
+    const response = await axios.post('https://963d-119-155-18-236.ngrok-free.app/upload', req.body, {
         headers: {
             'Content-Type': 'multipart/form-data',
              uid: req.headers.uid,
